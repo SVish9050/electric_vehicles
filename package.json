@@ -1,0 +1,38 @@
+{
+  "name": "electric_scooter",
+  "version": "1.0.0",
+  "description": "DMS for electric vehicles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon esm index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SVish9050/electric_vehicles.git"
+  },
+  "author": "Shivam Vishwakarma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SVish9050/electric_vehicles/issues"
+  },
+  "homepage": "https://github.com/SVish9050/electric_vehicles#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.1",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}
