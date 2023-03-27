@@ -1,0 +1,168 @@
+.enquiry_bg {
+  padding: 50px 0px;
+  padding-top: 0;
+}
+.enquiry_bg .page_heading {
+  padding: 30px 0px;
+}
+.enquiry_bg .page_heading h1 {
+  font-weight: 500;
+}
+.enquiry_bg .form_side form select {
+  width: 100%;
+  padding: 5px;
+  border-color: #ced4da;
+}
+.enquiry_bg .form_side form button {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.enquiry_bg .contact_details {
+  padding: 30px;
+  height: 80vh;
+}
+.enquiry_bg .contact_details h2 {
+  color: black;
+}
+.enquiry_bg .contact_details h5 {
+  color: black;
+}
+.enquiry_bg .contact_details h5 span i {
+  color: black;
+}
+.enquiry_bg .test_ride_img img {
+  width: 100%;
+}
+
+.emi_bg {
+  padding: 30px 0px;
+}
+.emi_bg .EMI_calulaotor p {
+  width: 90%;
+}
+.emi_bg .EMI_calulaotor form {
+  margin-top: 30px;
+  /* Mozilla compatibility has to be written separately from the Chrome/Safari version above, for some reason. If you require it, be sure to include this rule, updating it to match the rule above */
+}
+.emi_bg .EMI_calulaotor form select {
+  width: 100%;
+  padding: 5px;
+  border-color: #ced4da;
+}
+.emi_bg .EMI_calulaotor form body {
+  margin: 1em;
+  font-family: system-ui;
+}
+.emi_bg .EMI_calulaotor form input[type=range],
+.emi_bg .EMI_calulaotor form input[type=range]::-webkit-slider-runnable-track,
+.emi_bg .EMI_calulaotor form input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: inherit;
+}
+.emi_bg .EMI_calulaotor form .progress-bar {
+  width: 100%;
+  height: 0.8em;
+  margin: 0.1em 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.emi_bg .EMI_calulaotor form .progress-bar::-webkit-slider-thumb {
+  width: 0.5em;
+  height: 0.8em;
+  background-color: white;
+  border-radius: 0;
+  /* This property adds the "tail" on the left of the thumb, remove it and test to see how it works */
+  box-shadow: -100vw 0 0 100vw blueviolet;
+}
+.emi_bg .EMI_calulaotor form .progress-bar::-moz-range-thumb {
+  width: 0.5em;
+  height: 0.8em;
+  background-color: #000;
+  border-radius: 0;
+  /* This property adds the "tail" on the left of the thumb, remove it and test to see how it works */
+  box-shadow: -100vw 0 0 100vw blueviolet;
+  /* Note: firefox adds a border to the thumb, so this is required to remove it */
+  border: none;
+}
+.emi_bg .EMI_calulaotor form .numbers {
+  display: flex;
+  justify-content: space-between;
+}
+.emi_bg .EMI_calulaotor form .numbers .n1 {
+  text-align: start;
+}
+.emi_bg .EMI_calulaotor form .numbers .n2 {
+  text-align: end;
+}
+.emi_bg .emi_result_side {
+  padding: 20px;
+  background-color: aliceblue;
+}
+.emi_bg .emi_result_side .price_detalis {
+  display: flex;
+}
+.emi_bg .emi_result_side .price_detalis .showroom_price {
+  margin: 15px;
+  margin-left: 0;
+}
+.emi_bg .emi_result_side .price_detalis .showroom_price p b {
+  font-weight: 400;
+  font-size: 18px;
+}
+.emi_bg .emi_result_side .price_detalis .loan_amount {
+  margin: 15px;
+}
+.emi_bg .emi_result_side .price_detalis .loan_amount p b {
+  font-weight: 400;
+  font-size: 18px;
+}
+.emi_bg .emi_result_side .price_detalis .monthly_emi {
+  margin: 15px;
+  margin-right: 0;
+}
+.emi_bg .emi_result_side .price_detalis .monthly_emi p b {
+  font-weight: 400;
+  font-size: 18px;
+}
+.emi_bg .emi_result_side img {
+  display: block;
+  margin: auto;
+}
+.emi_bg .emi_result_side h4 {
+  text-align: center;
+  margin: 15px 0px;
+}
+.emi_bg .emi_result_side .action_btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-top: 1px solid rgba(128, 128, 128, 0.4196078431);
+}
+.emi_bg .emi_result_side .action_btns .border_right {
+  border-right: 1px solid rgba(128, 128, 128, 0.4196078431);
+}
+.emi_bg .emi_result_side .action_btns .btns_elec {
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+}
+.emi_bg .emi_result_side .action_btns .btns_elec a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.emi_bg .emi_result_side .action_btns .btns_elec a:hover {
+  -webkit-text-decoration: 1px solid underline;
+          text-decoration: 1px solid underline;
+  text-underline-offset: 5px;
+}/*# sourceMappingURL=Global.css.map */

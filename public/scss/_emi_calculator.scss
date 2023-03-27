@@ -1,0 +1,159 @@
+.emi_bg{
+    padding: 30px 0px;
+
+    .page_heading{
+        h1{
+
+        }
+    }
+    .EMI_calulaotor{
+        p{
+            width: 90%;
+        }
+        form{
+            margin-top: 30px;
+            label{
+
+            }
+            select{
+                width: 100%;
+                padding: 5px;
+                border-color: #ced4da;
+            }
+
+            body {
+                margin: 1em;
+                font-family: system-ui;
+            }
+            
+           
+            input[type=range],
+            input[type=range]::-webkit-slider-runnable-track,
+            input[type=range]::-webkit-slider-thumb {
+                 -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                font: inherit;
+            }
+            
+        
+            .progress-bar {
+                width: 100%;
+                height: 0.8em;
+                margin: 0.1em 0;
+                background-color: rgba(0,0,0,0.1);
+                border-radius: 0.5em;
+                overflow: hidden;
+            }
+            
+    
+            .progress-bar::-webkit-slider-thumb {
+                width: 0.5em;
+                height: 0.8em;
+              background-color: white;
+                border-radius: 0;
+                
+                /* This property adds the "tail" on the left of the thumb, remove it and test to see how it works */
+                box-shadow: -100vw 0 0 100vw blueviolet;
+            }
+            
+            /* Mozilla compatibility has to be written separately from the Chrome/Safari version above, for some reason. If you require it, be sure to include this rule, updating it to match the rule above */
+            .progress-bar::-moz-range-thumb {
+              width: 0.5em;
+              height: 0.8em;
+              background-color: #000;
+                border-radius: 0;
+                
+                /* This property adds the "tail" on the left of the thumb, remove it and test to see how it works */
+                box-shadow: -100vw 0 0 100vw blueviolet;
+                
+                /* Note: firefox adds a border to the thumb, so this is required to remove it */
+                border: none; 
+            }
+
+            .numbers{
+                display: flex;
+                justify-content: space-between;
+
+                .n1{
+                    text-align: start;
+                }
+                .n2{
+                    text-align: end;
+                }
+            }
+        }
+        
+    }
+    .emi_result_side{
+        padding: 20px;
+        background-color: aliceblue;
+        .price_detalis{
+            display: flex;
+
+            .showroom_price{
+                margin: 15px;
+                margin-left: 0;
+
+                p{
+                    b{
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .loan_amount{
+                margin: 15px;
+                p{
+                    b{
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .monthly_emi{
+                margin: 15px;
+                margin-right: 0;
+                p{
+                    b{
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        img{
+            display: block;
+            margin: auto;
+        }
+        h4{
+            text-align: center;
+            margin: 15px 0px;
+        }
+        .action_btns{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0px;
+            border-top: 1px solid #8080806b;
+            .border_right{
+                border-right: 1px solid #8080806b;
+            }
+            .btns_elec{
+                width: 50%;
+                text-align: center;
+                padding: 15px;
+                a{
+                    text-decoration: none;
+                    color:black;
+                    font-weight: bold;
+
+                    &:hover{
+                        text-decoration: 1px solid underline;
+                        text-underline-offset: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
