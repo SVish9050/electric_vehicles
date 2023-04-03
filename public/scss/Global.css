@@ -18,7 +18,7 @@
   text-align: center;
   padding: 10px;
   border-radius: 5px;
-  background-color: blueviolet;
+  background-color: chocolate;
   border: none;
   color: white;
   font-weight: bold;
@@ -77,12 +77,13 @@
   overflow: hidden;
 }
 .emi_bg .EMI_calulaotor form .progress-bar::-webkit-slider-thumb {
-  width: 0.5em;
+  width: 1rem;
   height: 0.8em;
-  background-color: white;
+  background-color: black;
   border-radius: 0;
   /* This property adds the "tail" on the left of the thumb, remove it and test to see how it works */
-  box-shadow: -100vw 0 0 100vw blueviolet;
+  box-shadow: -100vw 0 0 100vw chocolate;
+  cursor: pointer;
 }
 .emi_bg .EMI_calulaotor form .progress-bar::-moz-range-thumb {
   width: 0.5em;
@@ -90,7 +91,7 @@
   background-color: #000;
   border-radius: 0;
   /* This property adds the "tail" on the left of the thumb, remove it and test to see how it works */
-  box-shadow: -100vw 0 0 100vw blueviolet;
+  box-shadow: -100vw 0 0 100vw chocolate;
   /* Note: firefox adds a border to the thumb, so this is required to remove it */
   border: none;
 }
@@ -165,4 +166,95 @@
   -webkit-text-decoration: 1px solid underline;
           text-decoration: 1px solid underline;
   text-underline-offset: 5px;
+}
+
+.road-map-form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.road-map-form .map {
+  text-align: center;
+}
+.road-map-form .map-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.road-map-form .map-count .count {
+  background-color: rgba(51, 51, 51, 0.7);
+  color: #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-weight: bold;
+  position: relative;
+}
+.road-map-form .map-count .count.active {
+  background-color: chocolate;
+  color: #fff;
+}
+.road-map-form .map-count .count.count-1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.1rem;
+  width: 10rem;
+  transform: translateX(-100%);
+  background-color: #333;
+}
+.road-map-form .map-count .count.count-1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.1rem;
+  width: 10rem;
+  transform: translateX(25%);
+  background-color: #333;
+}
+.road-map-form .map-count .count.count-2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.1rem;
+  width: 10rem;
+  transform: translateX(-100%);
+  background-color: #333;
+}
+.road-map-form .map-count .count.count-2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.1rem;
+  width: 10rem;
+  transform: translateX(25%);
+  background-color: #333;
+}
+.road-map-form .map-count .count.count-3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.1rem;
+  width: 12rem;
+  transform: translateX(-100%);
+  background-color: #333;
+}
+.road-map-form .map-count .count.count-3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.1rem;
+  width: 10rem;
+  transform: translateX(25%);
+  background-color: #333;
+}
+.road-map-form .map-label {
+  display: block;
+  color: #333;
+  margin: 0.3rem 0rem;
 }/*# sourceMappingURL=Global.css.map */

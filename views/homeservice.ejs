@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Service</title>
+    <link rel="stylesheet" href="/css/Bootstrap.css" />
+    <link rel="stylesheet" href="/scss/Global.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+   <div>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid"> <a class="navbar-brand fw-bold" href="#">E-Scooter</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav d-flex justify-content-end w-100">
+                            <li class="nav-item mx-4"> <a class="nav-link" href="/enquiry">Enquiry</a> </li>
+                            <li class="nav-item mx-4"> <a class="nav-link" href="/testdrive">Test Drive</a> </li>
+                            <li class="nav-item mx-4"> <a class="nav-link" href="/emicalculator">EMI Calculator</a> </li>
+                            <li class="nav-item mx-4"> <a class="nav-link" href="/service">Service</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="container-fluid enquiry_bg">
+        <div class="container">
+            <div class="page_heading">
+                <center><h3>Book a Service</h3></center>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <center>
+                        <a href="/service" class="btn btn-primary btn-lg">Service Station</a>
+                        <a href="/homeservice" class="btn btn-secondary btn-lg">Home Service</a>
+                    </center>
+                </div>
+                <div class="container pt-5">
+                    <div class="form_side">
+                        <div class="road-map-form">
+                            <div class="map" id="step-first">
+                                <div class="map-count">
+                                    <span class="count count-1">1</span>
+                                </div>
+                                <span class="map-label">Select Package</span>
+                            </div>
+                            <div class="map" id="step-second">
+                                <div class="map-count">
+                                    <span class="count count-2">2</span>
+                                </div>
+                                <span class="map-label">Describe Any Issue Facing With Bike</span>
+                            </div>
+                            <div class="map" id="step-third">
+                                <div class="map-count">
+                                    <span class="count count-3">3</span>
+                                </div>
+                                <span class="map-label">Submit your Service Query</span>
+                            </div>
+                        </div>
+                        <br/>
+
+                        <div class="package-section">
+                            <form id="package-form">
+                                <div class="row g-2 m-2">
+                                    <div class="col-md-8">
+                                        <label for="package_name">Select Package</label>
+                                        <select class="form-select" aria-label="Default select example" name="customerPackage" id="package-dropdown" required>
+                                            <option value="">Select Package</option>
+                                            <optgroup label="Standard Service">
+                                                <option value="Standard Service For Gearless Bikes (INR 1099)">Standard Service For Gearless Bikes (INR 1099)</option>
+                                            </optgroup>
+                                            <optgroup label="Premium Service">
+                                                <option value="Premium Service For Gearless Bikes (INR 1299)">Premium Service For Gearless Bikes (INR 1299)</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+                                        <input type="submit" class="btn" value="Next" style="background-color: chocolate; color: #fff;">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="review-section">
+                            <form id="review-form" enctype="multipart/form-data">
+                                <div class="row g-2 m-2">
+                                    <div class="col-md">
+                                        <label for="image">Upload Image</label>
+                                        <input type="file" class="form-control" id="formFile" name="serviceImage">
+                                    </div>
+                                    <div class="col-md">
+                                        <textarea name="customerRequirement" class="form-control" placeholder="Tell Us your Requirements" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row g-2 m-2">
+                                    <div class="col-md"></div>
+                                    <div class="col-md pt-3" style="display: flex; justify-content: flex-end;">
+                                        <input type="submit" class="btn" value="Next" style="background-color: chocolate; color: #fff;">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="detail-section">
+                            <form id="detail-form">
+                                <div class="row g-2 mb-3">
+                                    <div class="col-md">
+                                    <div class="form-floating">
+                                        <label for="first_name">Customer Name</label>
+                                        <input type="text" class="form-control" id="first_name" name="customerName" placeholder="Name" required>
+                                        <input type="hidden" value="station" name="serviceType">
+                                    </div>
+                                    </div>
+                                    <div class="col-md">
+                                    <div class="form-floating">
+                                        <label for="last_name">Customer Email</label>
+                                        <input type="text" class="form-control" id="last_name" name="customerEmail" placeholder="Email" required>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="form-floating">
+                                            <label for="floatingInputGrid">Customer Mobile No</label>
+                                            <input type="number" class="form-control mb-3" id="floatingInputGrid" name="customerMobile" placeholder="+91 XXXXXXXX" required>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mb-3">
+                                    <div class="col-md">
+                                    <div class="form-floating">
+                                        <label for="floatingInputGrid">Select State</label>
+                                        <select class="form-select" aria-label="Default select example" name="customerState" id="state-dropdown" required>
+                                        </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-md">
+                                    <div class="form-floating">
+                                        <label for="floatingInputGrid">Select City</label>
+                                        <select class="form-select" aria-label="Default select example" name="customerCity" id="city-dropdown" required>
+                                        
+                                        </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="form-floating">
+                                            <label for="floatingInputGrid">Pin Code</label>
+                                            <input type="number" class="form-control mb-3" id="floatingInputGrid" name="customerPin" placeholder="XXXXXX" required>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mb-3">
+                                    <div class="col-md">
+                                    <div class="form-floating">
+                                        <label for="floatingInputGrid">Vehicle Model</label>
+                                        <select class="form-select" aria-label="Default select example" name="customerModel" id="vahicle-dropdown" required>
+                                        <option value="">Select Model</option>
+                                        <option value="Hero Electric Atria LX">Hero Electric Atria LX</option>
+                                        <option value="Hero Electric Flash LX">Hero Electric Flash LX</option>
+                                        <option value="Hero Electric NYX HS500 ER">Hero Electric NYX HS500 ER</option>
+                                        <option value="Hero Electric Optima CX - Dual Battery">Hero Electric Optima CX - Dual Battery</option>
+                                        <option value="Hero Electric Optima CX - Single Battery">Hero Electric Optima CX - Single Battery</option>
+                                        <option value="Hero Electric Photon LP">Hero Electric Photon LP</option>
+                                        <option value="Velocity - Electric Cycle by Hero Electric">Velocity - Electric Cycle by Hero Electric</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-md">
+                                    <div class="form-floating">
+                                        <label for="floatingInputGrid">Date of Service</label>
+                                        <input type="date" class="form-control mb-3" id="floatingInputGrid" name="serviceDate" required>
+                                    </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="form-floating">
+                                            <label for="floatingInputGrid">Select Time Slot</label>
+                                            <select class="form-select" aria-label="Default select example" name="serviceTime" id="servieTime-dropdown" required>
+                                                <option value="">Select Option</option>
+                                                <option value="9AM-12PM">9AM-12PM</option>
+                                                <option value="12PM-3PM">12PM-3PM</option>
+                                                <option value="3PM-7PM">3PM-7PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mb-3">
+                                    <div class="col-md-8">
+                                        <div class="form-floating">
+                                            <label for="floatingInputGrid">Address</label>
+                                            <textarea name="customerAddress" rows="5" class="form-control" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit">Book A Service</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      const baseUrl = '<%= url %>';
+      console.log(baseUrl, 'url');
+    </script>
+    <script src="/js/Jquery.js" type="text/javascript"></script>
+    <script src="/js/Bootstrap.js" type="text/javascript"></script>
+    <script src="/js/custom/enquiry.js" type="text/javascript"></script>
+    <script src="/js/custom/service.js" type="text/javascript"></script>
+</body>
+</html>

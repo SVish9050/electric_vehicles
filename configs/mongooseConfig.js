@@ -5,7 +5,8 @@ const password = "ShivamVish%409450";
 const cluster = "clustershivam.j2zze";
 const dbname = "vehicles_dms_db";
 
-const uri = `mongodb+srv://${username}:${password}@${cluster}.mongodb.net/${dbname}?retryWrites=true&w=majority`;
+// const uri = `mongodb+srv://${username}:${password}@${cluster}.mongodb.net/${dbname}?retryWrites=true&w=majority`;
+const uri = 'mongodb+srv://'+username+':'+password+'@'+cluster+'.mongodb.net/'+dbname+'?retryWrites=true&w=majority';
 
 mongoose.connect(uri, {
     useNewUrlParser: true, useUnifiedTopology: true

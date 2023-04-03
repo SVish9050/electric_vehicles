@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon esm index.js"
+    "start": "nodemon -r esm index.js"
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,7 @@
     "express-session": "^1.17.3",
     "http": "^0.0.1-security",
     "jsonwebtoken": "^9.0.0",
-    "mongodb": "^5.1.0",
-    "mongoose": "^7.0.3",
+    "mongoose": "^6.7.3",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "node-fetch": "^3.3.1",

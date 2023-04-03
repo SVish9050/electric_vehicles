@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use('/', require('./routes/pages/routes'));
 
 // API's Routes
-// app.use('/api', require('./routes/api/routes'));
+app.use('/api', require('./routes/api/routes'));
 
 server.listen(APP_PORT, () => {
     console.log(`Server Started At PORT ${APP_PORT}`);
